@@ -1,0 +1,70 @@
+.header {
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/background_header.svg");
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.header__image {
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  right: 5px;
+  top: 124px;
+}
+
+.header__title {
+  max-width: 729px;
+  margin: 202px 0 28px 80px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 72px;
+  z-index: 1;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.header__description {
+  max-width: 683px;
+  margin: 0 0 0 80px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  flex-grow: 1;
+}
+
+.header__hours {
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+
+.header__address {
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.header__paragraph {
+  font-weight: 500;
+  margin: 0;
+  z-index: 1;
+  color: #838383;
+}

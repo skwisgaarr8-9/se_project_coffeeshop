@@ -1,4 +1,7 @@
 @import url("../vendor/normalize.css");
+@import url("../blocks/header.css");
+@import url("../blocks/logo.css");
+@import url("../blocks/nav.css");
 
 .page {
   min-width: 1100px;
