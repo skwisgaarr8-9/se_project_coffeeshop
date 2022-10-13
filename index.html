@@ -30,20 +30,12 @@
           alt="Circular Practicum Coffee Shop logo with a half-filled pot of coffee and cute eyes looking to the right"
         />
         <nav class="nav">
-          <ol class="nav__links">
-            <ul class="nav__link" href="#">
-              Menu
-            </ul>
-            <ul class="nav__link" href="#">
-              Recipes
-            </ul>
-            <ul class="nav__link" href="#">
-              Book a table
-            </ul>
-            <ul class="nav__link" href="#">
-              Contacts
-            </ul>
-          </ol>
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#menu">Menu</a></li>
+            <li><a class="nav__link" href="#recipes">Recipes</a></li>
+            <li><a class="nav__link" href="#reservation">Book a table</a></li>
+            <li><a class="nav__link" href="#about">Contacts</a></li>
+          </ul>
         </nav>
         <h1 class="header__title">
           <span class="header__span-accent">Specialty&nbsp;coffee</span>
@@ -73,7 +65,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="menu">
+        <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
           <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
@@ -149,7 +141,7 @@
             </div>
           </div>
         </section>
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -184,7 +176,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
+        <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
             <fieldset class="form__fieldset">
@@ -225,7 +217,12 @@
               />
               <button type="submit" class="form__button">Book a table</button>
               <div class="form__checkbox-container">
-                <input type="checkbox" class="form__checkbox" id="agree" />
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  id="agree"
+                  required
+                />
                 <label class="form__label" for="agree"
                   >I agree with the terms of use</label
                 >
@@ -233,7 +230,7 @@
             </fieldset>
           </form>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__container">
             <h2 class="about__title">About the coffee shop</h2>
             <div class="about__content">
@@ -255,7 +252,39 @@
           <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__content">
+          <img
+            class="footer__logo"
+            src="./images/practicum_logo.svg"
+            alt="Practicum company name logo"
+          />
+          <div class="footer__social-content">
+            <h4 class="footer__social-heading">Social Media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Round white Facebook company logo"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Round white Instagram company logo"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&#169; 2022 Francis Flanagan</p>
+      </footer>
     </div>
   </body>
 </html>
