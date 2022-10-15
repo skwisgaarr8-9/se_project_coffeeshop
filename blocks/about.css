@@ -18,11 +18,11 @@
   color: #fff;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .about__container {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -59,6 +59,7 @@
   position: absolute;
   top: -152px;
   left: -129px;
+  z-index: -1;
 }
 
 .about__circle_animation_blurred {

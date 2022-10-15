@@ -60,11 +60,9 @@
             <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
             <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
           </div>
-          <div class="header__address">
-            <p class="header__paragraph">
-              200 Success Avenue, The Town of Practicum
-            </p>
-          </div>
+          <p class="header__paragraph header__paragraph_content_address">
+            200 Success Avenue, The Town of Practicum
+          </p>
         </div>
       </header>
       <main class="content">
@@ -74,8 +72,8 @@
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
-          <div class="menu__cards">
-            <div class="card">
+          <ul class="menu__cards">
+            <li class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__content">
                 <li class="card__list-item">
@@ -98,8 +96,8 @@
                   >$1.25
                 </li>
               </ul>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
               <h3 class="card__title">Espresso</h3>
               <ul class="card__content">
                 <li class="card__list-item">
@@ -118,8 +116,8 @@
                   >$10
                 </li>
               </ul>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
               <h3 class="card__title">Baked Goods</h3>
               <ul class="card__content">
                 <li class="card__list-item">
@@ -141,8 +139,8 @@
                   Fresh Bug’uette<span class="card__list-divider"></span>$0.25
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
@@ -206,7 +204,7 @@
               <label class="form__label" for="date-time">Date & time *</label>
               <input
                 type="datetime-local"
-                class="form__input"
+                class="form__input form__input_content_date-time"
                 id="date-time"
                 required
               />
